@@ -1,0 +1,131 @@
+### step1 ##
+cyoa-step1 testcase_step123/story2
+cyoa-step1 ./testcase_step123/story2
+cyoa-step1 ./testcase_step123/story2/
+cyoa-step1 ./testcase_step4/story3
+
+cyoa-step1 ./testcase_step123/double_at_symbol
+cyoa-step1 ./testcase_step123/colon_before_at_symbol
+cyoa-step1 ./testcase_step123/triple_colon_in_choice
+cyoa-step1 ./testcase_step123/page_declaration_no_in_oder
+cyoa-step1 ./testcase_step123/page_number_empty
+cyoa-step1 ./testcase_step123/page_number_invalid
+cyoa-step1 ./testcase_step123/page_type_invalid
+cyoa-step1 ./testcase_step123/blank_before_page_type
+cyoa-step1 ./testcase_step123/blank_after_page_type
+cyoa-step1 ./testcase_step123/blank_before_page_number
+cyoa-step1 ./testcase_step123/blank_after_page_number
+cyoa-step1 ./testcase_step123/blank_before_dest_number
+cyoa-step1 ./testcase_step123/blank_after_dest_number
+cyoa-step1 ./testcase_step123/minus_before_dest_number
+cyoa-step1 ./testcase_step123/minus_blank_before_dest_number
+cyoa-step1 ./testcase_step123/pagenum_in_choice_before_page_declaration
+cyoa-step1 ./testcase_step123/pagenum_in_choice_empty
+cyoa-step1 ./testcase_step123/destpage_in_choice_before_page_declaration
+cyoa-step1 ./testcase_step123/destpage_in_choice_empty
+cyoa-step1 ./testcase_step123/destpage_in_choice_invalid
+cyoa-step1 ./testcase_step123/duplicate_choice
+cyoa-step1 ./testcase_step123/no_lose_page
+cyoa-step1 ./testcase_step123/no_win_page
+cyoa-step1 ./testcase_step123/losepage_has_choice
+cyoa-step1 ./testcase_step123/winpage_has_choice
+cyoa-step1 ./testcase_step123/one_choice_to_itself
+cyoa-step1 ./testcase_step123/one_page_has_not_been_referenced
+cyoa-step1 ./testcase_step123/one_page_is_only_referenced_by_itself
+cyoa-step1 ./testcase_step123/invalid_page_is_referenced_by_choice
+cyoa-step1 ./testcase_step123/empty_story_txt
+cyoa-step1 ./testcase_step123/no_story_txt
+cyoa-step1 ./testcase_step123/page_file_broken
+cyoa-step1 ./testcase_step123/two_unreachable_pages
+cyoa-step1 ./testcase_step123/win_page_is_unreachable
+cyoa-step1 ./testcase_step123/story_txt_has_all_blank_line
+cyoa-step1 ./testcase_step123/story_txt_no_page0
+cyoa-step1 ./testcase_step123/page_0_is_final
+
+
+### step2 ###
+cyoa-step2 ./testcase_step123/story2 < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/story2 < ./testcase_step123/inputs/input_normal.txt
+##cyoa-step2 ./testcase_step123/story2 < ./testcase_step123/inputs/input_minus.txt
+##cyoa-step2 ./testcase_step123/story2 < ./testcase_step123/inputs/input_1a.txt
+
+cyoa-step2 ./testcase_step123/double_at_symbol < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/colon_before_at_symbol < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/triple_colon_in_choice < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/page_declaration_no_in_oder < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/page_number_empty < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/page_number_invalid < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/page_type_invalid < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/blank_before_page_type < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/blank_after_page_type < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/blank_before_page_number < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/blank_after_page_number < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/blank_before_dest_number < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/blank_after_dest_number < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/minus_before_dest_number < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/minus_blank_before_dest_number < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/pagenum_in_choice_before_page_declaration < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/pagenum_in_choice_empty < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/destpage_in_choice_before_page_declaration < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/destpage_in_choice_empty < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/destpage_in_choice_invalid < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/duplicate_choice < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/no_lose_page < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/no_win_page < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/losepage_has_choice < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/winpage_has_choice < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/one_choice_to_itself < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/one_page_has_not_been_referenced < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/one_page_is_only_referenced_by_itself < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/invalid_page_is_referenced_by_choice < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/empty_story_txt < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/no_story_txt < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/page_file_broken < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/two_unreachable_pages < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/win_page_is_unreachable < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/story_txt_has_all_blank_line < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/story_txt_no_page0 < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+cyoa-step2 ./testcase_step123/page_0_is_final < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+
+cyoa-step2 ./testcase_step4/story3 < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+
+
+### step3 ###
+cyoa-step3 ./testcase_step123/story2
+cyoa-step3 ./testcase_step4/story3
+
+cyoa-step3 ./testcase_step123/no_win_page
+cyoa-step3 ./testcase_step123/no_lose_page
+cyoa-step3 ./testcase_step123/one_choice_to_itself
+cyoa-step3 ./testcase_step123/two_unreachable_pages
+cyoa-step3 ./testcase_step123/win_page_is_unreachable
+cyoa-step3 ./testcase_step123/duplicate_choice
+cyoa-step3 ./testcase_step123/empty_story_txt
+
+
+### step4 ###
+cyoa-step4 ./testcase_step4/story3 < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+
+cyoa-step4 ./testcase_step4/set_empty_key < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/set_empty_val < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/set_blank_before_val < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/set_blank_after_val < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/set_same_page_same_key_same_val < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/set_same_page_same_key_diff_val < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/set_same_page_diff_key < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/set_key_before_declare_page < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/blank_between_close_brkt_colon1 < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/something_between_close_brkt_colon1 < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/double_close_brkt < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/duplicate_choice < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/duplicate_choice_same_dest_diff_val < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/duplicate_choice_same_dest_diff_key < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/win_page_set_key < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/lose_page_set_key < /usr/local/ece551/cyoa/story3/inputs/input21.txt
+cyoa-step4 ./testcase_step4/long_int_overflow < ./testcase_step4/long_int_overflow/input.txt
+
+### EC ###
+ec:step1
+ec:step2
+ec:step3
+ec:step4

@@ -1,0 +1,12 @@
+animal:dragon
+animal:walrus
+place:cave
+adjective:peculiar
+adjective:scary
+adjective:peaceful
+-1:negtive-one
+0:zero
+1abc:"abc"-after-one
+abc1:"abc"-before-one
+1 :space-after-one
+1: first-blank-is-number

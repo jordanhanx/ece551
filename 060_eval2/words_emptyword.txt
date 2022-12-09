@@ -1,0 +1,6 @@
+animal:dragon
+animal:
+place:cave
+adjective:
+adjective:scary
+adjective:peaceful

@@ -1,0 +1,6 @@
+animal:dra:gon
+animal:walrus
+place:ca:ve
+adjective:peculiar
+adjective:sc:ary
+adjective:peaceful

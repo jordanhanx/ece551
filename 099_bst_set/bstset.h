@@ -1,0 +1,124 @@
+#ifndef __BSTSET_H__
+#define __BSTSET_H__
+
+#include <algorithm>
+#include <cstdlib>
+
+#include "set.h"
+
+template<typename T>
+class BstSet : public Set<T> {
+  class Node {
+   public:
+    T key;
+    Node * left;
+    Node * right;
+    Node() : key(), left(NULL), right(NULL) {}
+    Node(T k, Node * le, Node * ri) : key(k), left(le), right(ri) {}
+  };
+  Node * root;
+
+  void deepcopy_bst(const Node * current) {
+    if (current != NULL) {
+      add(current->key);
+      deepcopy_bst(current->left);
+      deepcopy_bst(current->right);
+    }
+  }
+  void destroy_bst(Node * current) {
+    if (current != NULL) {
+      destroy_bst(current->left);
+      destroy_bst(current->right);
+      delete current;
+    }
+  }
+
+ public:
+  BstSet() : root(NULL) {}
+  BstSet(const BstSet & rhs) : root(NULL) { deepcopy_bst(rhs.root); }
+  BstSet & operator=(const BstSet & rhs) {
+    if (this != &rhs) {
+      BstSet temp_bst(rhs);
+      std::swap<Node *>(root, temp_bst.root);
+    }
+    return *this;
+  }
+  ~BstSet() { destroy_bst(root); }
+
+  virtual void add(const T & key) {
+    Node ** ptr = &root;
+    while (*ptr != NULL) {
+      if (key == (*ptr)->key) {
+        break;
+      }
+      else if (key < (*ptr)->key) {
+        ptr = &(*ptr)->left;
+      }
+      else {
+        ptr = &(*ptr)->right;
+      }
+    }
+    if (*ptr == NULL) {
+      *ptr = new Node(key, NULL, NULL);
+    }
+  }
+
+  virtual bool contains(const T & key) const {
+    bool ans = false;
+    Node const * node_ptr = root;
+    while (node_ptr != NULL) {
+      if (key == node_ptr->key) {
+        ans = true;
+        break;
+      }
+      else if (key < node_ptr->key) {
+        node_ptr = node_ptr->left;
+      }
+      else {
+        node_ptr = node_ptr->right;
+      }
+    }
+    return ans;
+  }
+
+  virtual void remove(const T & key) {
+    Node ** ptr = &root;
+    while ((*ptr) != NULL) {
+      if (key == (*ptr)->key) {
+        break;
+      }
+      else if (key < (*ptr)->key) {
+        ptr = &(*ptr)->left;
+      }
+      else {
+        ptr = &(*ptr)->right;
+      }
+    }
+    if ((*ptr) != NULL) {
+      Node * temp = *ptr;
+      if (temp->left == NULL) {
+        *ptr = temp->right;
+        delete temp;
+      }
+      else if (temp->right == NULL) {
+        *ptr = temp->left;
+        delete temp;
+      }
+      else {
+        // find the right-most left node--stuntman
+        Node ** stuntman_ptr = &temp->left;
+        while ((*stuntman_ptr)->right != NULL) {
+          stuntman_ptr = &(*stuntman_ptr)->right;
+        }
+        // swap their keys and values
+        Node * stuntman = *stuntman_ptr;
+        std::swap<T>(temp->key, stuntman->key);
+        // delete the stuntman
+        *stuntman_ptr = (*stuntman_ptr)->left;
+        delete stuntman;
+      }
+    }
+  }
+};
+
+#endif

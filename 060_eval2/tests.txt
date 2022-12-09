@@ -1,0 +1,231 @@
+story-step1 story.txt
+story-step1 story2.txt
+story-step1 story_blank_at_end.txt
+story-step1 story_blank_at_start.txt
+story-step1 story_emptyblank.txt
+story-step1 story_double_emptyblank.txt
+story-step1 story_no_blank.txt
+story-step1 story_singleblank.txt
+story-step1 story_empty.txt
+story-step1 story_empty_but_newline.txt
+
+story-step2 words.txt
+story-step2 words_emptycategory.txt
+story-step2 words_emptyword.txt
+story-step2 words_duplicate_words.txt
+story-step2 words_more_colon.txt
+story-step2 words_empty.txt
+story-step2 words_empty_but_newline.txt
+
+story-step3 words.txt story2.txt
+story-step3 words.txt story_refer_cross_line.txt
+story-step3 words.txt story_space_before_number.txt
+story-step3 words.txt story_space_after_number.txt
+story-step3 words.txt story_nonnumber_before_number.txt
+story-step3 words.txt story_nonnumber_after_number.txt
+story-step3 words.txt story_number_0.txt
+story-step3 words.txt story_negnumber.txt
+story-step3 words.txt story_first_blank_is_number.txt
+story-step3 words_updated.txt story_space_after_number.txt
+story-step3 words_updated.txt story_nonnumber_before_number.txt
+story-step3 words_updated.txt story_nonnumber_after_number.txt
+story-step3 words_updated.txt story_number_0.txt
+story-step3 words_updated.txt story_negnumber.txt
+story-step3 words_updated.txt story_first_blank_is_number.txt
+story-step3 words.txt story_number_llongmax.txt
+story-step3 words.txt story_number_over_llongmax.txt
+story-step3 words.txt story2_manywords.txt
+
+story-step4 words.txt story2.txt
+story-step4 -n words.txt story2.txt
+story-step4 words.txt -n story2.txt
+story-step4 words.txt story2.txt -n
+story-step4 -m words.txt story2.txt
+story-step4 n words.txt story2.txt
+story-step4 -N words.txt story2.txt
+story-step4 -n -n words.txt story2.txt
+story-step4 -nn words.txt story2.txt
+story-step4 -mn -n words.txt story2.txt
+story-step4 -n story2.txt words.txt
+
+story-step4 words.txt story4_3animal.txt
+story-step4 -n words.txt story4_3animal.txt
+story-step4 words_sameword_in_two_category.txt story4_2animal_2place_3adj.txt
+story-step4 -n words_sameword_in_two_category.txt story4_2animal_2place_3adj.txt
+
+story-step4 words.txt story2.txt
+story-step4 words.txt story_refer_cross_line.txt
+story-step4 words.txt story_space_before_number.txt
+story-step4 words.txt story_space_after_number.txt
+story-step4 words.txt story_nonnumber_before_number.txt
+story-step4 words.txt story_nonnumber_after_number.txt
+story-step4 words.txt story_number_0.txt
+story-step4 words.txt story_negnumber.txt
+story-step4 words.txt story_first_blank_is_number.txt
+story-step4 words_updated.txt story_space_after_number.txt
+story-step4 words_updated.txt story_nonnumber_before_number.txt
+story-step4 words_updated.txt story_nonnumber_after_number.txt
+story-step4 words_updated.txt story_number_0.txt
+story-step4 words_updated.txt story_negnumber.txt
+story-step4 words_updated.txt story_first_blank_is_number.txt
+story-step4 words.txt story_number_llongmax.txt
+story-step4 words.txt story_number_over_llongmax.txt
+story-step4 words.txt story2_manywords.txt
+story-step4 -n words.txt story2.txt
+story-step4 -n words.txt story_refer_cross_line.txt
+story-step4 -n words.txt story_space_before_number.txt
+story-step4 -n words.txt story_space_after_number.txt
+story-step4 -n words.txt story_nonnumber_before_number.txt
+story-step4 -n words.txt story_nonnumber_after_number.txt
+story-step4 -n words.txt story_number_0.txt
+story-step4 -n words.txt story_negnumber.txt
+story-step4 -n words.txt story_first_blank_is_number.txt
+story-step4 -n words_updated.txt story_space_after_number.txt
+story-step4 -n words_updated.txt story_nonnumber_before_number.txt
+story-step4 -n words_updated.txt story_nonnumber_after_number.txt
+story-step4 -n words_updated.txt story_number_0.txt
+story-step4 -n words_updated.txt story_negnumber.txt
+story-step4 -n words_updated.txt story_first_blank_is_number.txt
+story-step4 -n words.txt story_number_llongmax.txt
+story-step4 -n words.txt story_number_over_llongmax.txt
+story-step4 -n words.txt story2_manywords.txt
+
+story-step4 words.txt story.txt
+story-step4 words.txt story_blank_at_end.txt
+story-step4 words.txt story_blank_at_start.txt
+story-step4 words.txt story_emptyblank.txt
+story-step4 words.txt story_double_emptyblank.txt
+story-step4 words.txt story_no_blank.txt
+story-step4 words.txt story_singleblank.txt
+story-step4 words.txt story_empty.txt
+story-step4 words.txt story_empty_but_newline.txt
+story-step4 words_emptycategory.txt story.txt
+story-step4 words_emptycategory.txt story2.txt
+story-step4 words_emptycategory.txt story_blank_at_end.txt
+story-step4 words_emptycategory.txt story_blank_at_start.txt
+story-step4 words_emptycategory.txt story_emptyblank.txt
+story-step4 words_emptycategory.txt story_double_emptyblank.txt
+story-step4 words_emptycategory.txt story_no_blank.txt
+story-step4 words_emptycategory.txt story_singleblank.txt
+story-step4 words_emptycategory.txt story_empty.txt
+story-step4 words_emptycategory.txt story_empty_but_newline.txt
+story-step4 words_emptyword.txt story.txt
+story-step4 words_emptyword.txt story2.txt
+story-step4 words_emptyword.txt story_blank_at_end.txt
+story-step4 words_emptyword.txt story_blank_at_start.txt
+story-step4 words_emptyword.txt story_emptyblank.txt
+story-step4 words_emptyword.txt story_double_emptyblank.txt
+story-step4 words_emptyword.txt story_no_blank.txt
+story-step4 words_emptyword.txt story_singleblank.txt
+story-step4 words_emptyword.txt story_empty.txt
+story-step4 words_emptyword.txt story_empty_but_newline.txt
+story-step4 words_duplicate_words.txt story.txt
+story-step4 words_duplicate_words.txt story2.txt
+story-step4 words_duplicate_words.txt story_blank_at_end.txt
+story-step4 words_duplicate_words.txt story_blank_at_start.txt
+story-step4 words_duplicate_words.txt story_emptyblank.txt
+story-step4 words_duplicate_words.txt story_double_emptyblank.txt
+story-step4 words_duplicate_words.txt story_no_blank.txt
+story-step4 words_duplicate_words.txt story_singleblank.txt
+story-step4 words_duplicate_words.txt story_empty.txt
+story-step4 words_duplicate_words.txt story_empty_but_newline.txt
+story-step4 words_more_colon.txt story.txt
+story-step4 words_more_colon.txt story2.txt
+story-step4 words_more_colon.txt story_blank_at_end.txt
+story-step4 words_more_colon.txt story_blank_at_start.txt
+story-step4 words_more_colon.txt story_emptyblank.txt
+story-step4 words_more_colon.txt story_double_emptyblank.txt
+story-step4 words_more_colon.txt story_no_blank.txt
+story-step4 words_more_colon.txt story_singleblank.txt
+story-step4 words_more_colon.txt story_empty.txt
+story-step4 words_more_colon.txt story_empty_but_newline.txt
+story-step4 words_empty.txt story.txt
+story-step4 words_empty.txt story2.txt
+story-step4 words_empty.txt story_blank_at_end.txt
+story-step4 words_empty.txt story_blank_at_start.txt
+story-step4 words_empty.txt story_emptyblank.txt
+story-step4 words_empty.txt story_double_emptyblank.txt
+story-step4 words_empty.txt story_no_blank.txt
+story-step4 words_empty.txt story_singleblank.txt
+story-step4 words_empty.txt story_empty.txt
+story-step4 words_empty.txt story_empty_but_newline.txt
+story-step4 words_empty_but_newline.txt  story.txt
+story-step4 words_empty_but_newline.txt story2.txt
+story-step4 words_empty_but_newline.txt story_blank_at_end.txt
+story-step4 words_empty_but_newline.txt story_blank_at_start.txt
+story-step4 words_empty_but_newline.txt story_emptyblank.txt
+story-step4 words_empty_but_newline.txt story_double_emptyblank.txt
+story-step4 words_empty_but_newline.txt story_no_blank.txt
+story-step4 words_empty_but_newline.txt story_singleblank.txt
+story-step4 words_empty_but_newline.txt story_empty.txt
+story-step4 words_empty_but_newline.txt story_empty_but_newline.txt
+
+story-step4 -n words.txt story.txt
+story-step4 -n words.txt story_blank_at_end.txt
+story-step4 -n words.txt story_blank_at_start.txt
+story-step4 -n words.txt story_emptyblank.txt
+story-step4 -n words.txt story_double_emptyblank.txt
+story-step4 -n words.txt story_no_blank.txt
+story-step4 -n words.txt story_singleblank.txt
+story-step4 -n words.txt story_empty.txt
+story-step4 -n words.txt story_empty_but_newline.txt
+story-step4 -n words_emptycategory.txt story.txt
+story-step4 -n words_emptycategory.txt story2.txt
+story-step4 -n words_emptycategory.txt story_blank_at_end.txt
+story-step4 -n words_emptycategory.txt story_blank_at_start.txt
+story-step4 -n words_emptycategory.txt story_emptyblank.txt
+story-step4 -n words_emptycategory.txt story_double_emptyblank.txt
+story-step4 -n words_emptycategory.txt story_no_blank.txt
+story-step4 -n words_emptycategory.txt story_singleblank.txt
+story-step4 -n words_emptycategory.txt story_empty.txt
+story-step4 -n words_emptycategory.txt story_empty_but_newline.txt
+story-step4 -n words_emptyword.txt story.txt
+story-step4 -n words_emptyword.txt story2.txt
+story-step4 -n words_emptyword.txt story_blank_at_end.txt
+story-step4 -n words_emptyword.txt story_blank_at_start.txt
+story-step4 -n words_emptyword.txt story_emptyblank.txt
+story-step4 -n words_emptyword.txt story_double_emptyblank.txt
+story-step4 -n words_emptyword.txt story_no_blank.txt
+story-step4 -n words_emptyword.txt story_singleblank.txt
+story-step4 -n words_emptyword.txt story_empty.txt
+story-step4 -n words_emptyword.txt story_empty_but_newline.txt
+story-step4 -n words_duplicate_words.txt story.txt
+story-step4 -n words_duplicate_words.txt story2.txt
+story-step4 -n words_duplicate_words.txt story_blank_at_end.txt
+story-step4 -n words_duplicate_words.txt story_blank_at_start.txt
+story-step4 -n words_duplicate_words.txt story_emptyblank.txt
+story-step4 -n words_duplicate_words.txt story_double_emptyblank.txt
+story-step4 -n words_duplicate_words.txt story_no_blank.txt
+story-step4 -n words_duplicate_words.txt story_singleblank.txt
+story-step4 -n words_duplicate_words.txt story_empty.txt
+story-step4 -n words_duplicate_words.txt story_empty_but_newline.txt
+story-step4 -n words_more_colon.txt story.txt
+story-step4 -n words_more_colon.txt story2.txt
+story-step4 -n words_more_colon.txt story_blank_at_end.txt
+story-step4 -n words_more_colon.txt story_blank_at_start.txt
+story-step4 -n words_more_colon.txt story_emptyblank.txt
+story-step4 -n words_more_colon.txt story_double_emptyblank.txt
+story-step4 -n words_more_colon.txt story_no_blank.txt
+story-step4 -n words_more_colon.txt story_singleblank.txt
+story-step4 -n words_more_colon.txt story_empty.txt
+story-step4 -n words_more_colon.txt story_empty_but_newline.txt
+story-step4 -n words_empty.txt story.txt
+story-step4 -n words_empty.txt story2.txt
+story-step4 -n words_empty.txt story_blank_at_end.txt
+story-step4 -n words_empty.txt story_blank_at_start.txt
+story-step4 -n words_empty.txt story_emptyblank.txt
+story-step4 -n words_empty.txt story_double_emptyblank.txt
+story-step4 -n words_empty.txt story_no_blank.txt
+story-step4 -n words_empty.txt story_singleblank.txt
+story-step4 -n words_empty.txt story_empty.txt
+story-step4 -n words_empty.txt story_empty_but_newline.txt
+story-step4 -n words_empty_but_newline.txt  story.txt
+story-step4 -n words_empty_but_newline.txt story2.txt
+story-step4 -n words_empty_but_newline.txt story_blank_at_end.txt
+story-step4 -n words_empty_but_newline.txt story_blank_at_start.txt
+story-step4 -n words_empty_but_newline.txt story_emptyblank.txt
+story-step4 -n words_empty_but_newline.txt story_double_emptyblank.txt
+story-step4 -n words_empty_but_newline.txt story_no_blank.txt
+story-step4 -n words_empty_but_newline.txt story_singleblank.txt
+story-step4 -n words_empty_but_newline.txt story_empty.txt
+story-step4 -n words_empty_but_newline.txt story_empty_but_newline.txt

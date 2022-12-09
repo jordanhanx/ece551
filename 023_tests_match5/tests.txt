@@ -1,0 +1,16 @@
+abcdd 12345
+abccc 12222
+aaaaa 11111
+aaaaa 11111 zzzzz
+aaaaa
+aaaaaa 11111
+aaaa 11111
+aaaaa 111111
+aaaaa 1111
+aaabb 11123
+abbbb 11112
+AaAaa 11112
+***** 11112
+abcd! 1233?
+aabbb 11123
+aaabb 11123

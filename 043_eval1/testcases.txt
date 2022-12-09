@@ -1,0 +1,31 @@
+#error
+printCountries population_err1_NoComma.csv
+printCountries population_err2_SpaceInNum.csv
+printCountries population_err3_NonNum.csv
+printCountries population_err4_LongName.csv
+printCountries population_err5_TooManyPeople.csv
+printCountries population_err7_Nobody.csv
+printCountries population_err8_NobodyButSpace.csv
+
+printRunningAvg population.csv daily_small_nodata.csv
+
+printCumulative population.csv daily_small_nodata.csv
+
+printDailyMax population.csv daily_small_nodata.csv
+
+#success
+printCountries population.csv
+printCountries population_succ1_NoName.csv
+printCountries population_succ2_ManyPeople.csv
+printCountries population_succ3_SpaceBeforeNum.csv
+printCountries population_succ4_LongestName.csv
+
+printRunningAvg population.csv daily_small.csv
+printRunningAvg population.csv daily_cases.csv
+printRunningAvg population.csv daily_small_less7days.csv
+
+printCumulative population.csv daily_small.csv
+printCumulative population.csv daily_cases.csv
+
+printDailyMax population.csv daily_small.csv
+printDailyMax population.csv daily_cases.csv

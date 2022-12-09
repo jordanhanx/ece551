@@ -1,0 +1,1013 @@
+Grading at 12/09/2022:20:43:15.848434
+For commit ID c4bb823cdc4a28815cc17ed8f50746203c14d744
+Grading at Fri Dec  9 03:40:44 PM EST 2022
+Doing some basic checking for your submission
+
+Step 1
+Checking that cyoa-step1 compiles
+rm -f *~ *.o cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 *.bak
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step1.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 book.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 choice.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 key.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 my_str_tools.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 page.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 path.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 reader.cpp
+g++ -o cyoa-step1 -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step1.o book.o choice.o key.o my_str_tools.o page.o path.o reader.o
+The code compiled (good)
+Executable cyoa-step1 exists (good)
+------------------------------------
+Now running YOUR tests for step 1
+------------------------------------
+
+
+1.1: Current test is ./cyoa-step1 testcase_step123/story2 < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.2: Current test is ./cyoa-step1 ./testcase_step123/story2 < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.3: Current test is ./cyoa-step1 ./testcase_step123/story2/ < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.4: Current test is ./cyoa-step1 ./testcase_step4/story3 < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.5: Current test is ./cyoa-step1 ./testcase_step123/double_at_symbol < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 5@@N:pass.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.6: Current test is ./cyoa-step1 ./testcase_step123/colon_before_at_symbol < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 3:L@stab.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.7: Current test is ./cyoa-step1 ./testcase_step123/triple_colon_in_choice < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.8: Current test is ./cyoa-step1 ./testcase_step123/page_declaration_no_in_oder < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 1@N:tiptoe.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.9: Current test is ./cyoa-step1 ./testcase_step123/page_number_empty < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: @N:start.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.10: Current test is ./cyoa-step1 ./testcase_step123/page_number_invalid < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 0 @N:start.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.11: Current test is ./cyoa-step1 ./testcase_step123/page_type_invalid < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2@ABC:home.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.12: Current test is ./cyoa-step1 ./testcase_step123/blank_before_page_type < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2@ W:home.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.13: Current test is ./cyoa-step1 ./testcase_step123/blank_after_page_type < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2@W :home.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.14: Current test is ./cyoa-step1 ./testcase_step123/blank_before_page_number < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.15: Current test is ./cyoa-step1 ./testcase_step123/blank_after_page_number < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 8    @N:takeruby2.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.16: Current test is ./cyoa-step1 ./testcase_step123/blank_before_dest_number < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.17: Current test is ./cyoa-step1 ./testcase_step123/blank_after_dest_number < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 6:8   :Go back and take the ruby
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.18: Current test is ./cyoa-step1 ./testcase_step123/minus_before_dest_number < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.19: Current test is ./cyoa-step1 ./testcase_step123/minus_blank_before_dest_number < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 6:- 8:Go back and take the ruby
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.20: Current test is ./cyoa-step1 ./testcase_step123/pagenum_in_choice_before_page_declaration < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 0:1:Try to sneak past the sleeping dragon
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.21: Current test is ./cyoa-step1 ./testcase_step123/pagenum_in_choice_empty < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: :2:Leave the dragon's cave and go home
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.22: Current test is ./cyoa-step1 ./testcase_step123/destpage_in_choice_before_page_declaration < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.23: Current test is ./cyoa-step1 ./testcase_step123/destpage_in_choice_empty < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 1::Pick up the ruby
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.24: Current test is ./cyoa-step1 ./testcase_step123/destpage_in_choice_invalid < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 0:A:Try to sneak past the sleeping dragon
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.25: Current test is ./cyoa-step1 ./testcase_step123/duplicate_choice < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.26: Current test is ./cyoa-step1 ./testcase_step123/no_lose_page < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.27: Current test is ./cyoa-step1 ./testcase_step123/no_win_page < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.28: Current test is ./cyoa-step1 ./testcase_step123/losepage_has_choice < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 3:0:Lose Page will return to the Page(0)!
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.29: Current test is ./cyoa-step1 ./testcase_step123/winpage_has_choice < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2:0:WinPage has choice!!! return to the beginning!
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.30: Current test is ./cyoa-step1 ./testcase_step123/one_choice_to_itself < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.31: Current test is ./cyoa-step1 ./testcase_step123/one_page_has_not_been_referenced < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.32: Current test is ./cyoa-step1 ./testcase_step123/one_page_is_only_referenced_by_itself < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.33: Current test is ./cyoa-step1 ./testcase_step123/invalid_page_is_referenced_by_choice < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.34: Current test is ./cyoa-step1 ./testcase_step123/empty_story_txt < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.35: Current test is ./cyoa-step1 ./testcase_step123/no_story_txt < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+load_book(): ./testcase_step123/no_story_txt/story.txt is not found
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.36: Current test is ./cyoa-step1 ./testcase_step123/page_file_broken < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+Invalid path: ./testcase_step123/page_file_broken/aop_pro_plus.txt is not found
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.37: Current test is ./cyoa-step1 ./testcase_step123/two_unreachable_pages < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.38: Current test is ./cyoa-step1 ./testcase_step123/win_page_is_unreachable < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.39: Current test is ./cyoa-step1 ./testcase_step123/story_txt_has_all_blank_line < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+1.40: Current test is ./cyoa-step1 ./testcase_step123/story_txt_no_page0 < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 1@N:tiptoe.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+1.41: Current test is ./cyoa-step1 ./testcase_step123/page_0_is_final < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+No request to check for intermediate deadline completion on step 1
+
+Step 2
+Checking that cyoa-step2 compiles
+rm -f *~ *.o cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 *.bak
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step2.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 book.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 choice.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 key.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 my_str_tools.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 page.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 path.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 reader.cpp
+g++ -o cyoa-step2 -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step2.o book.o choice.o key.o my_str_tools.o page.o path.o reader.o
+The code compiled (good)
+Executable cyoa-step2 exists (good)
+------------------------------------
+Now running YOUR tests for step 2
+------------------------------------
+
+
+2.1: Current test is ./cyoa-step2 ./testcase_step123/story2  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.2: Current test is ./cyoa-step2 ./testcase_step123/story2  <  ./testcase_step123/inputs/input_normal.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.3: Current test is ./cyoa-step2 ./testcase_step123/double_at_symbol  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 5@@N:pass.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.4: Current test is ./cyoa-step2 ./testcase_step123/colon_before_at_symbol  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 3:L@stab.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.5: Current test is ./cyoa-step2 ./testcase_step123/triple_colon_in_choice  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.6: Current test is ./cyoa-step2 ./testcase_step123/page_declaration_no_in_oder  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 1@N:tiptoe.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.7: Current test is ./cyoa-step2 ./testcase_step123/page_number_empty  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: @N:start.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.8: Current test is ./cyoa-step2 ./testcase_step123/page_number_invalid  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 0 @N:start.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.9: Current test is ./cyoa-step2 ./testcase_step123/page_type_invalid  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2@ABC:home.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.10: Current test is ./cyoa-step2 ./testcase_step123/blank_before_page_type  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2@ W:home.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.11: Current test is ./cyoa-step2 ./testcase_step123/blank_after_page_type  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2@W :home.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.12: Current test is ./cyoa-step2 ./testcase_step123/blank_before_page_number  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.13: Current test is ./cyoa-step2 ./testcase_step123/blank_after_page_number  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 8    @N:takeruby2.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.14: Current test is ./cyoa-step2 ./testcase_step123/blank_before_dest_number  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.15: Current test is ./cyoa-step2 ./testcase_step123/blank_after_dest_number  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 6:8   :Go back and take the ruby
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.16: Current test is ./cyoa-step2 ./testcase_step123/minus_before_dest_number  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3b(): Page(4) has not been referenced by other page
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.17: Current test is ./cyoa-step2 ./testcase_step123/minus_blank_before_dest_number  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 6:- 8:Go back and take the ruby
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.18: Current test is ./cyoa-step2 ./testcase_step123/pagenum_in_choice_before_page_declaration  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 0:1:Try to sneak past the sleeping dragon
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.19: Current test is ./cyoa-step2 ./testcase_step123/pagenum_in_choice_empty  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: :2:Leave the dragon's cave and go home
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.20: Current test is ./cyoa-step2 ./testcase_step123/destpage_in_choice_before_page_declaration  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.21: Current test is ./cyoa-step2 ./testcase_step123/destpage_in_choice_empty  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 1::Pick up the ruby
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.22: Current test is ./cyoa-step2 ./testcase_step123/destpage_in_choice_invalid  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 0:A:Try to sneak past the sleeping dragon
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.23: Current test is ./cyoa-step2 ./testcase_step123/duplicate_choice  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.24: Current test is ./cyoa-step2 ./testcase_step123/no_lose_page  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3c(): no lose Page 
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.25: Current test is ./cyoa-step2 ./testcase_step123/no_win_page  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3c(): no win page 
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.26: Current test is ./cyoa-step2 ./testcase_step123/losepage_has_choice  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 3:0:Lose Page will return to the Page(0)!
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.27: Current test is ./cyoa-step2 ./testcase_step123/winpage_has_choice  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2:0:WinPage has choice!!! return to the beginning!
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.28: Current test is ./cyoa-step2 ./testcase_step123/one_choice_to_itself  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.29: Current test is ./cyoa-step2 ./testcase_step123/one_page_has_not_been_referenced  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3b(): Page(5) has not been referenced by other page
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.30: Current test is ./cyoa-step2 ./testcase_step123/one_page_is_only_referenced_by_itself  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3b(): Page(3) has not been referenced by other page
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.31: Current test is ./cyoa-step2 ./testcase_step123/invalid_page_is_referenced_by_choice  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3b(): Page(5) has not been referenced by other page
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.32: Current test is ./cyoa-step2 ./testcase_step123/empty_story_txt  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3c(): no win page no lose Page 
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.33: Current test is ./cyoa-step2 ./testcase_step123/no_story_txt  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+load_book(): ./testcase_step123/no_story_txt/story.txt is not found
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.34: Current test is ./cyoa-step2 ./testcase_step123/page_file_broken  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+Invalid path: ./testcase_step123/page_file_broken/aop_pro_plus.txt is not found
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.35: Current test is ./cyoa-step2 ./testcase_step123/two_unreachable_pages  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.36: Current test is ./cyoa-step2 ./testcase_step123/win_page_is_unreachable  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.37: Current test is ./cyoa-step2 ./testcase_step123/story_txt_has_all_blank_line  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+2.38: Current test is ./cyoa-step2 ./testcase_step123/story_txt_no_page0  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 1@N:tiptoe.txt
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.39: Current test is ./cyoa-step2 ./testcase_step123/page_0_is_final  <  /usr/local/ece551/cyoa/story2/inputs/input9.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3b(): Page(2) has not been referenced by other page
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+2.40: Current test is ./cyoa-step2 ./testcase_step4/story3  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+No request to check for intermediate deadline completion on step 2
+
+Step 3
+Checking that cyoa-step3 compiles
+rm -f *~ *.o cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 *.bak
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step3.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 book.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 choice.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 key.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 my_str_tools.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 page.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 path.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 reader.cpp
+g++ -o cyoa-step3 -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step3.o book.o choice.o key.o my_str_tools.o page.o path.o reader.o
+The code compiled (good)
+Executable cyoa-step3 exists (good)
+------------------------------------
+Now running YOUR tests for step 3
+------------------------------------
+
+
+3.1: Current test is ./cyoa-step3 ./testcase_step123/story2 < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+3.2: Current test is ./cyoa-step3 ./testcase_step4/story3 < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+3.3: Current test is ./cyoa-step3 ./testcase_step123/no_win_page < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3c(): no win page 
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+3.4: Current test is ./cyoa-step3 ./testcase_step123/no_lose_page < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3c(): no lose Page 
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+3.5: Current test is ./cyoa-step3 ./testcase_step123/one_choice_to_itself < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+3.6: Current test is ./cyoa-step3 ./testcase_step123/two_unreachable_pages < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+3.7: Current test is ./cyoa-step3 ./testcase_step123/win_page_is_unreachable < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+3.8: Current test is ./cyoa-step3 ./testcase_step123/duplicate_choice < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+3.9: Current test is ./cyoa-step3 ./testcase_step123/empty_story_txt < /dev/null
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+check_3c(): no win page no lose Page 
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+No request to check for intermediate deadline completion on step 3
+
+Step 4
+Checking that cyoa-step4 compiles
+rm -f *~ *.o cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 *.bak
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step4.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 book.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 choice.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 key.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 my_str_tools.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 page.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 path.cpp
+g++ -c -std=gnu++98 -Wall -Werror -pedantic -ggdb3 reader.cpp
+g++ -o cyoa-step4 -std=gnu++98 -Wall -Werror -pedantic -ggdb3 cyoa-step4.o book.o choice.o key.o my_str_tools.o page.o path.o reader.o
+The code compiled (good)
+Executable cyoa-step4 exists (good)
+------------------------------------
+Now running YOUR tests for step 4
+------------------------------------
+
+
+4.1: Current test is ./cyoa-step4 ./testcase_step4/story3  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.2: Current test is ./cyoa-step4 ./testcase_step4/set_empty_key  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.3: Current test is ./cyoa-step4 ./testcase_step4/set_empty_val  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2$pastry=
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+4.4: Current test is ./cyoa-step4 ./testcase_step4/set_blank_before_val  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.5: Current test is ./cyoa-step4 ./testcase_step4/set_blank_after_val  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2$pastry=2 
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+4.6: Current test is ./cyoa-step4 ./testcase_step4/set_same_page_same_key_same_val  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.7: Current test is ./cyoa-step4 ./testcase_step4/set_same_page_same_key_diff_val  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.8: Current test is ./cyoa-step4 ./testcase_step4/set_same_page_diff_key  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.9: Current test is ./cyoa-step4 ./testcase_step4/set_key_before_declare_page  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 2$pastry=2
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+4.10: Current test is ./cyoa-step4 ./testcase_step4/blank_between_close_brkt_colon1  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 8[broke=0] :10:Offer the dragon your last coins.
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+4.11: Current test is ./cyoa-step4 ./testcase_step4/something_between_close_brkt_colon1  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 8[broke=0]Drew:10:Offer the dragon your last coins.
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+4.12: Current test is ./cyoa-step4 ./testcase_step4/double_close_brkt  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Great: we both considered this an error
+----here is what you printed on stderr---
+pase_line(): illegal line: 8[broke=0]]:10:Offer the dragon your last coins.
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
+
+
+4.13: Current test is ./cyoa-step4 ./testcase_step4/duplicate_choice  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.14: Current test is ./cyoa-step4 ./testcase_step4/duplicate_choice_same_dest_diff_val  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.15: Current test is ./cyoa-step4 ./testcase_step4/duplicate_choice_same_dest_diff_key  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.16: Current test is ./cyoa-step4 ./testcase_step4/win_page_set_key  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.17: Current test is ./cyoa-step4 ./testcase_step4/lose_page_set_key  <  /usr/local/ece551/cyoa/story3/inputs/input21.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+
+
+4.18: Current test is ./cyoa-step4 ./testcase_step4/long_int_overflow  <  ./testcase_step4/long_int_overflow/input.txt
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
+No request to check for intermediate deadline completion on step 4
+
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
+
+Overall Grade: NO GRADE YET
