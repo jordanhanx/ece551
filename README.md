@@ -1,14 +1,14 @@
-*Warning: This repo is just to record my own work, please do not plagiarize！*\
+*Warning: This repo is just to record my own work, please do not plagiarize！*
 
 
-Welcome to your ece551 git repository.
+>Welcome to your ece551 git repository.
 
-The first thing you should do is 
+>The first thing you should do is 
 
-  git pull
+>  git pull
 
-Once you have done that, you will see your intial assignments. 
-As you complete assignments, more will be released.
+>Once you have done that, you will see your intial assignments. 
+>As you complete assignments, more will be released.
 
-You should start with 000_submit, which will help you
-familiarize yourself with git, view-grades, and grade.
+>You should start with 000_submit, which will help you
+>familiarize yourself with git, view-grades, and grade.
