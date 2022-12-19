@@ -1,3 +1,6 @@
+**Warning**: This repo is just to record my own work, please do not plagiarize！
+
+
 Welcome to your ece551 git repository.
 
 The first thing you should do is 
